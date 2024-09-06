@@ -15,6 +15,7 @@ interface ButtonProps {
   label?: string;
   style?: Style;
   id?: string;
+  title?: string;
 }
 
 /**
@@ -31,6 +32,7 @@ export const Button = ({
   onClick,
   style = {},
   id,
+  title,
   ...props
   }: ButtonProps) => {
 
@@ -38,10 +40,18 @@ export const Button = ({
     return <div style={style}>
       <svg key="icon" className="icon" aria-hidden="true"
            id={id}
-           style={{ cursor: 'pointer', width: '25px', height: '25px' }}
-           onClick={(e) => { if (onClick) onClick(e) }}>
-      <use xlinkHref={`${featherIcons}${iconName}`}/>
-    </svg></div>
+           style={{cursor: 'pointer', width: '25px', height: '25px'}}
+           onClick={(e) => {
+             if ( onClick ) {
+               onClick(e)
+             }
+           }}>
+        <use xlinkHref={`${featherIcons}${iconName}`}/>
+        <rect>
+          <title>{title}</title>
+        </rect>
+      </svg>
+    </div>
   } else {
     let mode = primary ? 'button-box btn btn-primary' : 'button-box btn btn-secondary';
 
@@ -57,6 +67,7 @@ export const Button = ({
     return <button
       id={id}
       type="button"
+      title={title}
       className={mode} style={style}
       onClick={(e) => {
         if ( onClick ) onClick(e)
