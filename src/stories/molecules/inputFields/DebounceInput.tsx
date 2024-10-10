@@ -53,11 +53,13 @@ export const DebounceInput = ({
     <div ref={inputRef} style={style} className={className}>
       <div style={{ position: 'relative' }}>
         <input className="debounceInput"
-          value={inputValue}
-          onChange={handleInputChange}
-          type="text"
-          disabled={isReadonly}
-          placeholder={placeholder}
+           autoFocus
+           value={inputValue}
+           onChange={handleInputChange}
+           type="text"
+           disabled={isReadonly}
+           placeholder={placeholder}
+           id={"debounceInput"+inputRef}
         />
       </div>
     </div>
