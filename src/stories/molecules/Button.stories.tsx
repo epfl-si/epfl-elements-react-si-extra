@@ -1,6 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { useArgs } from '@storybook/preview-api';
-import React from 'react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Button } from './Button';
 import featherIcons from 'epfl-elements/dist/icons/feather-sprite.svg';
 

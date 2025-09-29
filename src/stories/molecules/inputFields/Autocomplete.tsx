@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { FormControlProps, Form } from 'react-bootstrap';
-import featherIcons from "epfl-elements/dist/icons/feather-sprite.svg";
 import './autocomplete.css';
+import featherIcons from "epfl-elements/dist/icons/feather-sprite.svg";
 
 type Item = {
   label: string;

@@ -1,7 +1,6 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { Text } from './Text';
-import React from "react";
 
 const meta: Meta<typeof Text> = {
   title: 'Molecules/Inputs/Text',

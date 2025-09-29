@@ -1,4 +1,4 @@
-import type { Preview } from "@storybook/react";
+import type { Preview } from "@storybook/react-vite";
 import 'epfl-elements/dist/css/elements.css';
 import 'epfl-elements/dist/css/vendors.css';
 import './storybook.css';
