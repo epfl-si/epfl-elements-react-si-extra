@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import { FormCard } from './FormCard.tsx';
+import { FormCard } from '../components/FormCard/FormCard';
 
 const meta = {
     title: 'Molecules/FormCard',

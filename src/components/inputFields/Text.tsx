@@ -1,4 +1,3 @@
-import React from 'react';
 import type * as CSS from "csstype";
 
 interface Style extends CSS.Properties, CSS.PropertiesHyphen {}

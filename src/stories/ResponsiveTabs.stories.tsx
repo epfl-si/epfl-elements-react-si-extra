@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import { ResponsiveTabs } from './ResponsiveTabs';
+import { ResponsiveTabs } from '../components/ResponsiveTabs/ResponsiveTabs';
 
 const meta: Meta<typeof ResponsiveTabs> = {
   title: 'Molecules/ResponsiveTabs',

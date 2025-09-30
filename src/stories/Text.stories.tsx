@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
-import { TextArea } from './TextArea';
+import { Text } from '../components/inputFields/Text';
 
-const meta: Meta<typeof TextArea> = {
-  title: 'Molecules/Inputs/TextArea',
-  component: TextArea,
+const meta: Meta<typeof Text> = {
+  title: 'Molecules/Inputs/Text',
+  component: Text,
   parameters: {
     layout: 'centered',
   },
@@ -18,6 +18,7 @@ export const Default: Story = {
   args: {
     name: 'test_Name',
     id: 'test_primary',
+    type: 'text'
   }
 };
 
@@ -58,5 +59,37 @@ export const WithPlaceholder: Story = {
   args: {
     ...Default.args,
     placeholder: 'Test label',
+  }
+};
+
+export const Password: Story = {
+  ...Default,
+  args: {
+    ...Default.args,
+    type: 'password'
+  }
+};
+
+export const Email: Story = {
+  ...Default,
+  args: {
+    ...Default.args,
+    type: 'email'
+  }
+};
+
+export const Telephone: Story = {
+  ...Default,
+  args: {
+    ...Default.args,
+    type: 'tel'
+  }
+};
+
+export const Url: Story = {
+  ...Default,
+  args: {
+    ...Default.args,
+    type: 'url'
   }
 };

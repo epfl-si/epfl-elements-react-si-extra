@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import {Tabs} from "./Tabs";
+import {Tabs} from "../components/Tabs/Tabs";
 import featherIcons from "epfl-elements/dist/icons/feather-sprite.svg";
 
 const meta: Meta<typeof Tabs> = {

@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
-import { DebounceInput } from './DebounceInput';
+import { DebounceInput } from '../components/inputFields/DebounceInput/DebounceInput';
 
 const meta: Meta<typeof DebounceInput> = {
   title: 'Molecules/Inputs/DebounceInput',

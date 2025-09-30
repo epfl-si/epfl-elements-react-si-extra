@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import { Button } from './Button';
+import { Button } from '../components/Button/Button';
 import featherIcons from 'epfl-elements/dist/icons/feather-sprite.svg';
 
 const meta: Meta<typeof Button> = {

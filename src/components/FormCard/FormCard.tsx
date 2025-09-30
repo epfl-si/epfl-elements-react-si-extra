@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button} from "./Button.tsx";
+import {Button} from "../Button/Button";
 import './formCard.css'
 
 interface Style extends CSS.Properties, CSS.PropertiesHyphen {}
