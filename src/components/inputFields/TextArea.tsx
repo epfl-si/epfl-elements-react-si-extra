@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface TextAreaProps {
   size?: 'small' | 'medium' | 'large';
   isReadonly?: boolean;

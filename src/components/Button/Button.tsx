@@ -1,4 +1,3 @@
-import React from 'react';
 import featherIcons from "epfl-elements/dist/icons/feather-sprite.svg";
 import './button.css';
 import type * as CSS from "csstype";
