@@ -20,6 +20,11 @@ const config: StorybookConfig = {
   framework: {
     name: getAbsolutePath("@storybook/react-vite"),
     options: {},
-  }
+  },
+
+  viteFinal: async (config) => {
+    config.base = '/epfl-elements-react-si-extra/';
+    return config;
+  },
 };
 export default config;
