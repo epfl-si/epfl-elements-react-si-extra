@@ -1,4 +1,3 @@
-import React from 'react'
 import { Base } from './epfl-elements/Base.tsx'
 import { Avatar } from './epfl-elements/Avatar.tsx'
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
@@ -41,11 +40,3 @@ function App() {
 }
 
 export default App;
-
-function NothingHereNow() {
-	return (
-		<div>
-			<Link to="/">NothingHereNow</Link>
-		</div>
-	);
-}
