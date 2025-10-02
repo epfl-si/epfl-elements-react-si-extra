@@ -1,0 +1,12 @@
+import{j as d}from"./jsx-runtime-dZDNEfLr.js";import{r as m}from"./iframe-DxOFCZSE.js";import"./preload-helper-PPVm8Dsz.js";function b(a,r=100,f){let e,t=[];const c=()=>r,l=function(...n){const o=this;return new Promise((p,i)=>{const s=function(){e=void 0;{const y=a.apply(o,n);t.forEach(({resolve:v})=>v(y)),t=[]}};e!==void 0&&clearTimeout(e),e=setTimeout(s,c()),t.push({resolve:p,reject:i})})};return l.cancel=function(n){e!==void 0&&clearTimeout(e),t.forEach(({reject:o})=>o(n)),t=[]},l}const g=({input:a="",placeholder:r="",isReadonly:f=!1,style:e={},className:h,onChange:t})=>{const[c,l]=m.useState(a),n=m.useRef(null),o=m.useMemo(()=>b(s=>{t?.(s)},500),[t]),p=i=>{const s=i.target.value;l(s),o(s)};return d.jsx("div",{ref:n,style:e,className:h,children:d.jsx("div",{style:{position:"relative"},children:d.jsx("input",{className:"debounceInput",autoFocus:!0,value:c,onChange:p,type:"text",disabled:f,placeholder:r,id:"debounceInput"+n})})})};g.__docgenInfo={description:`An autocomplete list with debounce query.
+
+If single selection: the selected element is directly shown in the input field.
+The "itemValue", if present, is the initialization value.
+
+For multiple selections: selected elements are shown above the input list and it is possible to delete them.
+The "selected" prop contains all selected items.`,methods:[],displayName:"DebounceInput",props:{input:{required:!1,tsType:{name:"string"},description:"",defaultValue:{value:"''",computed:!1}},placeholder:{required:!1,tsType:{name:"string"},description:"",defaultValue:{value:"''",computed:!1}},isReadonly:{required:!1,tsType:{name:"boolean"},description:"",defaultValue:{value:"false",computed:!1}},onChange:{required:!1,tsType:{name:"signature",type:"function",raw:"(inputValue: string) => void",signature:{arguments:[{type:{name:"string"},name:"inputValue"}],return:{name:"void"}}},description:""},style:{required:!1,tsType:{name:"Style"},description:"",defaultValue:{value:"{}",computed:!1}},className:{required:!1,tsType:{name:"string"},description:""}}};const q={title:"Molecules/Inputs/DebounceInput",component:g,parameters:{layout:"centered"},tags:["autodocs"]},u={args:{placeholder:"type somethings",onChange:I}};function I(a){console.log(a)}u.parameters={...u.parameters,docs:{...u.parameters?.docs,source:{originalSource:`{
+  args: {
+    placeholder: 'type somethings',
+    onChange: onChangeValue
+  }
+}`,...u.parameters?.docs?.source}}};const C=["Multiple"];export{u as Multiple,C as __namedExportsOrder,q as default};
