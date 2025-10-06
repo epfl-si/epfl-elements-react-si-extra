@@ -84,7 +84,7 @@ jobs:
 
       # Create the package.json that is needed to create a package
       - name: Create the package.json
-        run: jq -n --arg version v${{ env.EER_VERSION }} '{"name":"epfl-elements-react-si-extra","version":$version,"description":"EPFL Elements React Library for extra elements","main":"index.js","repository":"github:epfl-si/epfl-elements-react-si-extra","keywords":["epfl-elements-react-si-extra"],"author":"EPFL ISAS-FSD","contributors":["domq (https://github.com/domq)","ponsfrilus (https://github.com/ponsfrilus)","rosamaggi (https://github.com/rosamaggi)"],"license":"MIT","types":"./index.d.ts","dependencies":{"epfl-elements-react":"^2.4.0"},"bugs":{"url":"https://github.com/epfl-si/epfl-elements-react-si-extra/issues"},"homepage":"https://github.com/epfl-si/epfl-elements-react-si-extra#readme"}' > ./dist/package.json
+        run: jq -n --arg version v${{ env.EER_VERSION }} '{"name":"epfl-elements-react-si-extra","version":$version,"description":"EPFL Elements React Library for extra elements","main":"index.ts","repository":"github:epfl-si/epfl-elements-react-si-extra","keywords":["epfl-elements-react-si-extra"],"author":"EPFL ISAS-FSD","contributors":["domq (https://github.com/domq)","ponsfrilus (https://github.com/ponsfrilus)","rosamaggi (https://github.com/rosamaggi)"],"license":"MIT","types":"./index.d.ts","dependencies":{"epfl-elements-react":"^2.4.0"},"bugs":{"url":"https://github.com/epfl-si/epfl-elements-react-si-extra/issues"},"homepage":"https://github.com/epfl-si/epfl-elements-react-si-extra#readme"}' > ./dist/package.json
 
       # Create the epfl-elements-react-si-extra package
       - name: Create the epfl-elements-react-si-extra package
