@@ -1,5 +1,7 @@
 import './button.css';
 import type * as CSS from "csstype";
+// @ts-expect-error epfl-element does not provide types
+import featherIcons from 'epfl-elements/dist/icons/feather-sprite.svg';
 
 interface Style extends CSS.Properties, CSS.PropertiesHyphen {}
 
@@ -78,7 +80,7 @@ export const Button = ({
           aria-hidden="true"
           className="icon"
         >
-          <use xlinkHref={iconName}/>
+          <use xlinkHref={featherIcons+iconName}/>
         </svg>
         <span
           style={{

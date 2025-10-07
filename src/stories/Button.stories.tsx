@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Button } from '../components/Button/Button';
-import featherIcons from 'epfl-elements/dist/icons/feather-sprite.svg';
 
 const meta: Meta<typeof Button> = {
   title: 'Molecules/Button',
@@ -22,7 +21,7 @@ export const Primary: Story = {
   args: {
     primary: true,
     label: 'Click me',
-    iconName: `${featherIcons}#save`
+    iconName: `#save`
   }
 };
 
@@ -53,7 +52,7 @@ export const Small: Story = {
 export const Icon: Story = {
   args: {
     size: 'icon',
-    iconName: `${featherIcons}#save`
+    iconName: `#save`
   },
 };
 
@@ -61,7 +60,7 @@ export const WithArguments: Story = {
   args: {
     primary: true,
     label: 'Click me',
-    iconName: `${featherIcons}#save`
+    iconName: `#save`
   },
   render(args) {
     // prop in the “Show code” area.
