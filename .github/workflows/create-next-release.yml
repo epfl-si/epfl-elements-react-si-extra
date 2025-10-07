@@ -113,7 +113,7 @@ jobs:
             --title="${GITHUB_REPOSITORY#*/} ${tag#v}" \
             --generate-notes
 
-#      - name: Publish package on NPM 📦
-#        run: npm publish epfl-elements-react-si-extra-v${{ env.EER_VERSION }}.tgz
-#        env:
-#          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Publish package on NPM 📦
+        run: npm publish epfl-elements-react-si-extra-v${{ env.EER_VERSION }}.tgz
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
