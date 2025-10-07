@@ -1,4 +1,4 @@
-import{j as t}from"./jsx-runtime-Dv12yplo.js";import{B as c}from"./Button-CsKZMqnW.js";import{f as m}from"./feather-sprite-BJeC_hki.js";import"./iframe-n7kJe_nf.js";import"./preload-helper-BJiQSKF8.js";const y={title:"Molecules/Button",component:c,parameters:{layout:"centered"},tags:["autodocs"],argTypes:{onClick:{action:"clicked"},label:{type:"string"}}},r={args:{primary:!0,label:"Click me",iconName:`${m}#save`}},e={...r,args:{...r.args,primary:!1}},a={...r,args:{...r.args,size:"large"}},s={...r,args:{...r.args,size:"small"}},n={args:{size:"icon",iconName:"#save"}},o={args:{primary:!0,label:"Click me",iconName:`${m}#save`},render(i){return t.jsx(c,{...i,children:t.jsx("div",{children:t.jsx("span",{style:{marginLeft:"5px"},children:"Test Button"},"label")})})}};r.parameters={...r.parameters,docs:{...r.parameters?.docs,source:{originalSource:`{
+import{j as t}from"./jsx-runtime-Dfctr4nr.js";import{B as m}from"./Button-DM_clGtO.js";import{f as c}from"./feather-sprite-BJeC_hki.js";import"./iframe-CIibmClz.js";import"./preload-helper-BJiQSKF8.js";const y={title:"Molecules/Button",component:m,parameters:{layout:"centered"},tags:["autodocs"],argTypes:{onClick:{action:"clicked"},label:{type:"string"}}},r={args:{primary:!0,label:"Click me",iconName:`${c}#save`}},e={...r,args:{...r.args,primary:!1}},a={...r,args:{...r.args,size:"large"}},s={...r,args:{...r.args,size:"small"}},n={args:{size:"icon",iconName:`${c}#save`}},o={args:{primary:!0,label:"Click me",iconName:`${c}#save`},render(i){return t.jsx(m,{...i,children:t.jsx("div",{children:t.jsx("span",{style:{marginLeft:"5px"},children:"Test Button"},"label")})})}};r.parameters={...r.parameters,docs:{...r.parameters?.docs,source:{originalSource:`{
   args: {
     primary: true,
     label: 'Click me',
@@ -25,7 +25,7 @@ import{j as t}from"./jsx-runtime-Dv12yplo.js";import{B as c}from"./Button-CsKZMq
 }`,...s.parameters?.docs?.source}}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
   args: {
     size: 'icon',
-    iconName: '#save'
+    iconName: \`\${featherIcons}#save\`
   }
 }`,...n.parameters?.docs?.source}}};o.parameters={...o.parameters,docs:{...o.parameters?.docs,source:{originalSource:`{
   args: {
