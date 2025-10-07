@@ -1,4 +1,3 @@
-import featherIcons from "epfl-elements/dist/icons/feather-sprite.svg";
 import './button.css';
 import type * as CSS from "csstype";
 
@@ -45,7 +44,7 @@ export const Button = ({
                onClick(e)
              }
            }}>
-        <use xlinkHref={`${featherIcons}${iconName}`}/>
+        <use xlinkHref={iconName}/>
         <rect>
           <title>{title}</title>
         </rect>

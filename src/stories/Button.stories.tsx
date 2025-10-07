@@ -53,7 +53,7 @@ export const Small: Story = {
 export const Icon: Story = {
   args: {
     size: 'icon',
-    iconName: '#save'
+    iconName: `${featherIcons}#save`
   },
 };
 

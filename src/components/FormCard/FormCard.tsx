@@ -1,5 +1,6 @@
 import {Button} from "../Button/Button";
 import './formCard.css'
+import * as CSS from 'csstype';
 
 interface Style extends CSS.Properties, CSS.PropertiesHyphen {}
 

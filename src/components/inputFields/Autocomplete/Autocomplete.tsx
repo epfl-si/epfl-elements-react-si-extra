@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { FormControlProps, Form } from 'react-bootstrap';
 import './autocomplete.css';
-import featherIcons from "epfl-elements/dist/icons/feather-sprite.svg";
 
 type Item = {
   label: string;
@@ -123,7 +122,7 @@ export const Autocomplete = ({
                   {selected.label}
                   {isReadonly ?
                     <svg className="icon feather icon-right-disabled" aria-hidden="true">
-                      <use xlinkHref={`${featherIcons}#trash-2`}></use>
+                      <use xlinkHref={`#trash-2`}></use>
                     </svg>
                     :
                     <svg className="icon feather icon-right" aria-hidden="true"
@@ -131,7 +130,7 @@ export const Autocomplete = ({
                                           if (onChange) {
                                             onChange(selectedSuggestions)
                                           }}}>
-                    <use xlinkHref={`${featherIcons}#trash-2`}></use>
+                    <use xlinkHref={`#trash-2`}></use>
                   </svg>}
                 </div>
               </li>
