@@ -11,7 +11,7 @@ type TabProps = { id: string, children: React.ReactNode };
 
 const TabsFC = ({children}: TabsProps) => {
   const tabArray = (Children.toArray(children || []).filter(
-    (child : React.ReactElement) => child.type === Tabs.Tab)) as React.ReactElement<TabProps>[];
+    (child) => (child as React.ReactElement<TabProps>).type === Tabs.Tab)) as React.ReactElement<TabProps>[];
   const [activeTab, setActiveTab] = useState(0);
 
   function c_id(child: React.ReactElement<TabProps>) {
@@ -20,14 +20,14 @@ const TabsFC = ({children}: TabsProps) => {
 
   function c_title(children: React.ReactNode) {
     const title = (Children.toArray(children || []).find(
-      (child : React.ReactElement) => child.type === Tabs.Tab.Title)) as React.ReactElement<TabTitleProps>;
-    return title.props.children;
+			(child) => (child as React.ReactElement<TabTitleProps>).type === Tabs.Tab.Title)) as React.ReactElement<TabTitleProps> | undefined;
+    return title?.props.children;
   }
 
   function c_content(children: React.ReactNode) {
     const content = (Children.toArray(children || []).find(
-      (child : React.ReactElement) => child.type === Tabs.Tab.Content)) as React.ReactElement<TabContentProps>;
-    return content.props.children;
+      (child) => (child as React.ReactElement<TabContentProps>).type === Tabs.Tab.Content)) as React.ReactElement<TabContentProps> | undefined;
+    return content?.props.children;
   }
 
   return (

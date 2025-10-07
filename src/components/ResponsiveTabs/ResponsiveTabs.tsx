@@ -15,7 +15,7 @@ type TabProps = { id: string, children: React.ReactNode };
 
 const ResponsiveTabsFC = ({ children, cardStyle }: ResponsiveTabsProps) => {
   const tabArray = (Children.toArray(children || []).filter(
-    (child : React.ReactElement) => child.type === ResponsiveTabs.Tab)) as React.ReactElement<TabProps>[];
+    (child) => (child as React.ReactElement<TabProps>).type === ResponsiveTabs.Tab)) as React.ReactElement<TabProps>[];
   const [activeTab, setActiveTab] = useState(0); // State to track the active tab index
 
   function c_id(child: React.ReactElement<TabProps>) {
@@ -24,13 +24,13 @@ const ResponsiveTabsFC = ({ children, cardStyle }: ResponsiveTabsProps) => {
 
   function c_title(children: React.ReactNode) {
     const title = (Children.toArray(children || []).find(
-      (child : React.ReactElement) => child.type === ResponsiveTabs.Tab.Title)) as React.ReactElement<TabTitleProps>;
+      (child ) => (child as React.ReactElement<TabTitleProps>).type === ResponsiveTabs.Tab.Title)) as React.ReactElement<TabTitleProps>;
     return title.props.children;
   }
 
   function c_content(children: React.ReactNode) {
     const content = (Children.toArray(children || []).find(
-      (child : React.ReactElement) => child.type === ResponsiveTabs.Tab.Content)) as React.ReactElement<TabContentProps>;
+      (child) => (child as React.ReactElement<TabContentProps>).type === ResponsiveTabs.Tab.Content)) as React.ReactElement<TabContentProps>;
     return content.props.children;
   }
 
@@ -87,7 +87,7 @@ export const ResponsiveTabs =
     Object.assign(
       ResponsiveTabsFC,
       {
-        Tab: Object.assign(() => <></> as React.FC<TabProps>,
+        Tab: Object.assign(() => <></> as JSX.Element,
           {
             Title: (() => <></>) as React.FC<TabTitleProps>,
             Content: (() => <></>) as React.FC<TabContentProps>
