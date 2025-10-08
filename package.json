@@ -1,7 +1,7 @@
 {
   "name": "epfl-elements-react-si-extra",
   "private": true,
-  "version": "1.0.9",
+  "version": "1.0.10",
   "type": "module",
   "files": [
     "dist"

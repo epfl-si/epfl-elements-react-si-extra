@@ -1,6 +1,8 @@
 import {Button} from "../Button/Button";
 import './formCard.css'
 import * as CSS from 'csstype';
+// @ts-expect-error epfl-element does not provide types
+import featherIcons from 'epfl-elements/dist/icons/feather-sprite.svg';
 
 interface Style extends CSS.Properties, CSS.PropertiesHyphen {}
 
@@ -44,7 +46,7 @@ export const FormCard = ({
           </div>
           {icon ? <div className="form-flex-item-icon">
             <Button size="icon"
-                    iconName={icon}
+                    iconName={featherIcons+icon}
                     onClick={onClickIcon}
                     title={tooltip}
                     key={keyValue.concat("button")}
