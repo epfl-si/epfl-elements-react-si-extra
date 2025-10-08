@@ -4,3 +4,6 @@ export { Autocomplete } from '../src/components/inputFields/Autocomplete/Autocom
 export { DebounceInput } from '../src/components/inputFields/DebounceInput/DebounceInput'
 export { ResponsiveTabs } from '../src/components/ResponsiveTabs/ResponsiveTabs'
 export { Tabs } from '../src/components/Tabs/Tabs'
+export { Text } from '../src/components/inputFields/Text/Text'
+export { TextArea } from '../src/components/inputFields/TextArea/TextArea'
+export { Numeric } from '../src/components/inputFields/Numeric/Numeric'
