@@ -23,3 +23,16 @@ export const Default: Story = {
     ]
   },
 };
+
+export const CustomURL: Story = {
+  args: {
+    homeUrl: "https://www.google.ch",
+    target: "_top",
+    children: [
+      <li className="breadcrumb-item">Campus</li>,
+      <li className='breadcrumb-item'>
+        <a href='https://www.google.com'>Google</a>
+      </li>
+    ]
+  },
+};

@@ -1,3 +1,12 @@
+import '../scss/generalStyles.scss'
+
+import '../src/components/FormCard/formCard.css'
+import '../src/components/Button/button.css'
+import '../src/components/inputFields/Autocomplete/autocomplete.css'
+import '../src/components/inputFields/DebounceInput/debounceInput.css'
+import '../src/components/ResponsiveTabs/responsiveTabs.scss'
+import '../src/components/Tabs/tabs.css'
+
 export { Button } from '../src/components/Button/Button'
 export { FormCard } from '../src/components/FormCard/FormCard'
 export { Autocomplete } from '../src/components/inputFields/Autocomplete/Autocomplete'

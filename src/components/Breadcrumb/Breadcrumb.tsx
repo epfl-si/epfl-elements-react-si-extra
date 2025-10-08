@@ -1,22 +1,24 @@
 interface BreadcrumbProps {
   children?: React.ReactNode;
   homeUrl?: string;
+  target?: '_blanc' | '_top';
 }
 
 /**
  * A Breadcrumb
  */
 export const Breadcrumb = ({
-                         children,
-                         homeUrl
-                       }: BreadcrumbProps) => {
+  children,
+  homeUrl,
+  target
+}: BreadcrumbProps) => {
 
     return (
       <div className='breadcrumb-container'>
         <nav aria-label='breadcrumb' className='breadcrumb-wrapper'>
           <ol className='breadcrumb'>
             <li className='breadcrumb-item' style={{ marginRight: '0.4em' }}>
-              <a href={homeUrl ?? 'https://www.epfl.ch/'} target='_blank' rel='noopener noreferrer'>
+              <a href={homeUrl ?? 'https://www.epfl.ch/'} target={target ?? '_blanc'} rel='noopener noreferrer'>
                 <svg className='icon' aria-hidden='true'>
                   <use xlinkHref='#icon-home'>
                     <svg id='icon-home' viewBox='0 0 11 12'>
