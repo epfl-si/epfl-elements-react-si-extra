@@ -1,4 +1,4 @@
-import{j as o}from"./jsx-runtime-JREzBMnd.js";import"./iframe-DGdu2PBg.js";import"./preload-helper-BJiQSKF8.js";const s=({logoUrl:r,alt:a,target:l})=>o.jsx("a",{className:"logo",href:r??"https://www.epfl.ch/",target:l??"_top",children:o.jsx("img",{src:"https://www.epfl.ch/campus/services/website//wp-content/themes/wp-theme-2018/assets/svg/epfl-logo.svg?refresh=now",alt:a??"EPFL, École polytechnique fédérale de Lausanne",className:"img-fluid"})});s.__docgenInfo={description:`The EPFL logo.
+import{j as o}from"./jsx-runtime-Du-cUmoI.js";import"./iframe-DrRR3E9E.js";import"./preload-helper-BJiQSKF8.js";const s=({logoUrl:r,alt:a,target:l})=>o.jsx("a",{className:"logo",href:r??"https://www.epfl.ch/",target:l??"_top",children:o.jsx("img",{src:"https://www.epfl.ch/campus/services/website//wp-content/themes/wp-theme-2018/assets/svg/epfl-logo.svg?refresh=now",alt:a??"EPFL, École polytechnique fédérale de Lausanne",className:"img-fluid"})});s.__docgenInfo={description:`The EPFL logo.
 By default, the logo link redirects to the EPFL website, but it’s possible to configure the following:
 - the placeholder comment
 - the URL to open when the logo is clicked
