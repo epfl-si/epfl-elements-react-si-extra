@@ -20,7 +20,7 @@ const TabsFC = ({children}: TabsProps) => {
 
   function c_title(children: React.ReactNode) {
     const title = (Children.toArray(children || []).find(
-			(child) => (child as React.ReactElement<TabTitleProps>).type === Tabs.Tab.Title)) as React.ReactElement<TabTitleProps> | undefined;
+      (child) => (child as React.ReactElement<TabTitleProps>).type === Tabs.Tab.Title)) as React.ReactElement<TabTitleProps> | undefined;
     return title?.props.children;
   }
 

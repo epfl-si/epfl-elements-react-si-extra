@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
-import { Text } from '../components/inputFields/Text';
+import { Text } from '../components/inputFields/Text/Text.tsx';
 
 const meta: Meta<typeof Text> = {
   title: 'Molecules/Inputs/Text',

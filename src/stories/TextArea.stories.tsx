@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
+import {TextArea} from "../components/inputFields/TextArea/TextArea.tsx";
 
-import { TextArea } from '../components/inputFields/TextArea';
 
 const meta: Meta<typeof TextArea> = {
   title: 'Molecules/Inputs/TextArea',

@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-
-import { Numeric } from '../components/inputFields/Numeric.tsx';
+import {Numeric} from "../components/inputFields/Numeric/Numeric.tsx";
 
 const meta: Meta<typeof Numeric> = {
   title: 'Molecules/Inputs/Numeric',
