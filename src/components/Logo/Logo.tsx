@@ -16,7 +16,7 @@ export const Logo = ({
 	alt,
 	target
 }: LogoProps) => {
-	const imageUrl = `https://www.epfl.ch/campus/services/website//wp-content/themes/wp-theme-2018/assets/svg/epfl-logo.svg`
+	const imageUrl = `https://www.epfl.ch/campus/services/website/wp-content/themes/wp-theme-2018/assets/svg/epfl-logo.svg`
 
 	return (
 		<a className='logo' href={logoUrl ?? 'https://www.epfl.ch/'} target={target ?? '_top'}>
