@@ -20,7 +20,9 @@ interface ButtonProps {
 
 /**
  * A button.
- * It is also possible to have just an icon by giving the icon name
+ * It is possible to have:
+ * - a primary or secondary button with or without image
+ * or just an icon by giving the icon name and size = 'icon'
  */
 export const Button = ({
   primary = true,
