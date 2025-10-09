@@ -17,7 +17,7 @@ interface TextAreaProps {
 }
 
 /**
- * An textarea field.
+ * A textarea field.
  */
 export const TextArea = ({
                        size = 'medium',
