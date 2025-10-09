@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import {Tabs} from "../components/Tabs/Tabs";
+// @ts-expect-error epfl-element does not provide types
 import featherIcons from "epfl-elements/dist/icons/feather-sprite.svg";
 
 const meta: Meta<typeof Tabs> = {

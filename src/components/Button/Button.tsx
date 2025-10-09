@@ -46,7 +46,7 @@ export const Button = ({
                onClick(e)
              }
            }}>
-        <use xlinkHref={iconName}/>
+        <use xlinkHref={featherIcons+iconName}/>
         <rect>
           <title>{title}</title>
         </rect>
