@@ -3,13 +3,13 @@
 The EPFL Elements React library SI entra is a collection of React
 components based on the [EPFL Elements] Style Guide and [EPFL Elements React library].
 
-The code in this repository provides both the [EPFL Elements React SI entra Storybook],
+The code in this repository provides both the [EPFL Elements React SI extra Storybook],
 where you can preview each component, and the [epfl-elements-react-si-extra] library
 itself, which is published on the npm registry.
 
 [EPFL Elements]: https://epfl-si.github.io/elements/#/
 [EPFL Elements React library]: https://epfl-si.github.io/epfl-elements-react/?path=/docs/documentation-introduction--documentation
-[EPFL Elements React SI entra Storybook]: https://epfl-si.github.io/epfl-elements-react-si-extra
+[EPFL Elements React SI extra Storybook]: https://epfl-si.github.io/epfl-elements-react-si-extra
 [epfl-elements-react-si-extra]: https://www.npmjs.com/package/epfl-elements-react-si-extra
 
 ## TL;DR (Usage)
@@ -41,7 +41,7 @@ The main objective is to provide the EPFL Elements React SI extra library based 
 ## Explore
 
 The best way to explore the components provided by this library is to browse
-the Storybook website here: [EPFL Elements React SI entra Storybook].
+the Storybook website here: [EPFL Elements React SI extra Storybook].
 
 ### Techstack
 
